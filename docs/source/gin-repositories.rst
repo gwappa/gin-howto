@@ -46,9 +46,9 @@ see :ref:`listing-repositories`):
 Accessing to a repository
 --------------------------
 
-In order to have an access to a repository, you have to:
+In order to have an access to a repository:
 
-- be **logged in as a user**:
+- You have to be **logged in as a user**:
 
     - **from the web interface**, you can use the "Sign in" button on the top-right corner.
 
@@ -71,12 +71,14 @@ In order to have an access to a repository, you have to:
          :scale: 50%
 
 
-- have an **access-previlige to a repository**. This means either:
+- You must have an **access-previlige to a repository**. This means either:
 
     - *you are the owner* of the repository. In this case, if you set it "private",
       no one else may be able to see your repository.
     - you are *a member of the owner organization* of the repository. In this case,
       even when it is set as "private", the members of the organization share the repository.
+
+    You can check what repositories you have access to, by :ref:`listing-repositories`.
 
 Creating a repository
 ----------------------
