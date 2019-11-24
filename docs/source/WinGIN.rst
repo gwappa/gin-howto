@@ -34,12 +34,17 @@ You can find the GIN icon (below) on the system tray (where you have the icon fo
 As you right-click on the icon, you can manage WinGIN settings such as available
 repositories and repository updates.
 
-.. image:: _static/wingin-rightclick.png
+.. image:: _static/wingin-icon.png
    :alt: what it looks like upon right-clicking
    :scale: 100%
 
 On the initial launch, you will be asked about your logging information onto
-`Gin <https://gin.g-node.org/>`_.
+`Gin <https://gin.g-node.org/>`_ (can be changed later).
+
+.. image:: _static/wingin-login.png
+   :alt:   Log-in prompt
+   :scale: 60%
+
 
 Checkout directory vs Mountpoint directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

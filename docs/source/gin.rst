@@ -8,8 +8,17 @@ Get registered as a Gin user
 
 **You have to obtain an account in Gin in order to work with Gin repositories**.
 
+.. image:: _static/gin-web.png
+   :alt:   What it looks like on the top page of https://gin.g-node.org
+   :scale: 25%
+
 Click on the "Register" button on the top-right corner of the `Gin web site <https://gin.g-node.org>`_,
 and fill in the necessary information.
+
+.. image:: _static/gin-signup.png
+   :alt:   The registration page of Gin web service
+   :scale: 25%
+
 
 After verification of your e-mail address, you can start working with Gin.
 
@@ -38,7 +47,12 @@ In principle, *almost* all the repository actions can be performed through any i
 Gin web interface
 ^^^^^^^^^^^^^^^^^^
 
-You can get access to it by going to https://gin.g-node.org/ .
+You can get access to it by going to https://gin.g-node.org/ :
+
+.. image:: _static/gin-web-repository.png
+   :alt:   Appearance of a repository on Gin web service
+   :scale: 25%
+
 
 WinGIN desktop client (Windows only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

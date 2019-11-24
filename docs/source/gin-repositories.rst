@@ -13,8 +13,8 @@ Gin Repository primer
    Consult with :ref:`user-interfaces` for more details.
 
 
-Repository identification
---------------------------
+Identification of a repository
+-------------------------------
 
 A repository is identified based on the **name of the owner** and a unique **repository name**.
 
@@ -26,6 +26,23 @@ For example, the organization ``larkumlab`` has this repository ``GinSandbox``.
 To identify this repository, you can specify as ``larkumlab/GinSandbox``
 (the repository is `here <https://gin.g-node.org/larkumlab/GinSandbox>`_).
 
+You can check repository names in various ways, using the Gin web service (also
+see :ref:`listing-repositories`):
+
+- **On the repository page**: you can see its name (along with the name of the owner)
+  on the top of the page (i.e. "AdaptFE/ReadingTrials" in this example).
+
+  .. image:: _static/gin-web-repository-name.png
+     :scale: 25%
+     :alt:   Checking repository name from the repository page on the web.
+
+- **On personal / organization page**: the repository names, without the owner name
+  (which is this organization itself) can be seen.
+
+  .. figure:: _static/gin-web-organization-reponame.png
+     :scale: 25%
+     :alt:   List of repositories on the organization page.
+
 Accessing to a repository
 --------------------------
 
@@ -33,11 +50,26 @@ In order to have an access to a repository, you have to:
 
 - be **logged in as a user**:
 
-    - from the web interface, you can use the "Sign in" button on the top-right corner.
-    - from WinGIN, you will be prompted to log in on the first usage, and you are
+    - **from the web interface**, you can use the "Sign in" button on the top-right corner.
+
+      .. image:: _static/gin-web-signin.png
+         :alt: The sign-in page of Gin web interface.
+         :scale: 30%
+
+    - **from WinGIN**, you will be prompted to log in on the first usage, and you are
       free from it afterwards.
-    - from Gin CLI, you have to run `gin login` before working with repositories,
+
+      .. image:: _static/wingin-login.png
+         :alt: The initial log-in prompt on WinGIN.
+         :scale: 60%
+
+    - **from Gin CLI**, you have to run ``gin login`` before working with repositories,
       but you are free from it afterwards.
+
+      .. image:: _static/gin-cli-login.png
+         :alt: ``gin login`` command.
+         :scale: 50%
+
 
 - have an **access-previlige to a repository**. This means either:
 
@@ -62,6 +94,23 @@ Creating a repository
     - Using Gin CLI, run ``gin create <owner name>/<repository name>``.
       An empty repository will be created (TODO: need to check).
 
+.. _listing-repositories:
+
+Listing available repositories
+-------------------------------
+
+.. image:: _static/gin-web-repositories.png
+   :alt:   Repository listing on the "dashboard"
+   :scale: 30%
+   :align: center
+
+
+.. image:: _static/gin-cli-repos.png
+   :alt:   Example output of ``gin repos --all``
+   :scale: 45%
+   :align: center
+
+
 
 Updating a repository
 ----------------------
@@ -75,9 +124,19 @@ what you changed from the previous commit.
     - Using Gin CLI, you can run ``gin commit -m "...(message)..." .`` from any
       sub-directory of your repository (note that you don't have a way to stage/add individual files).
     - Using WinGIN desktop client, you can use the "Upload changes" contextual menu.
+
 - **Committing remotely**:
 
     - You can edit or upload individual files using the **Gin web interface**.
+
+      .. figure:: _static/gin-web-buttons.png
+         :scale:    40%
+         :align:    center
+         :figwidth: 82%
+
+         **The "New file" and "Upload file" buttons.**
+         Click on the button on the repository page, and you will be redirected
+         to the corresponding control page.
 
 Downloading a repository for the first time (cloning)
 ------------------------------------------------------
@@ -89,6 +148,15 @@ You can either use the command-line interface or the desktop client:
 - **From the Gin CLI**: run ``gin get <owner name>/<repository name>`` in a directory
   to check out the latest version as a sub-directory.
 - **From WinGIN**: use the "Checkout" button from the "Manage repositories" contextual menu.
+
+.. figure:: _static/gin-web-gincommand.png
+   :scale:    40%
+   :align:    center
+   :figwidth: 95%
+
+   **You can check what command to run by looking at the repository page.**
+   The command ``gin get ...`` shows up on the middle-right on the page.
+   It can be copied to your local clipboard.
 
 Synchronizing a repository
 ---------------------------
