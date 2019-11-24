@@ -43,7 +43,7 @@ for people who intend to start using Gin.
      <br />
      To the extent possible under law,
      <a rel="dct:publisher"
-        href="https://gin-howto.readthedocs.io/en/latest/">
+        href="https://github.com/gwappa">
        <span property="dct:title">Keisuke Sehara</span></a>
      has waived all copyright and related or neighboring rights to
      <span property="dct:title">Gin HOWTO</span>.
